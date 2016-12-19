@@ -22,6 +22,7 @@ this directory contains five sub-directories:
 - `css` is the directory contains all the custom but public javascript libary files.
 - `plugins` is the directory stores the 3rd-party plugins.
 - `img` is the directory stores all the custom but public images, including all logos.
+- `font` is the directory stores all the local fonts.
 - `data` is the directory stores all the custom but public data file, e.g. csv files, json files, etc.
 
 ### `dc_assets/dc_public/js`
@@ -45,6 +46,13 @@ two roles for this directory are a little complicate.
 - `[type directory]` is the sub-directory under `img` and its name must be clearly telling what type of images it is. lower case only.
 - `[class directory]` is the sub-directory under `[type directory]` and its name must be clearly telling what class of images it is. lower case only. this sub-directory is not necessary, only if the images of `[type directory]` can be sorted into class. `[class directory]` can only contains files.
 - every file must has two versions, one is raw, the other one is minified. assuming we has a file called `logo/standard/1kite.png`, we can tell from the names of path and file that it is a standard(full-color) logo, and there must be a minified version `logo/standard/1kite.min.png`. letters must be lower case.
+
+### `dc_assets/dc_public/font`
+- `[font directory]` is the only type of sub-directory under `plugins`, and must be named with the font name only, no version number, and must use lower case letters and underscore only. e.g. `open_sans`.
+- `[version directory]` is the only type of sub-directory under `[font directory]`, and must be named with the version number(lower case only) only and do not name it starting with `v`, e.g. `open_sans/13`. if you cannot find out the version number of the plugin, use the date when you download it as version number, e.g. `open_sans/20160912`.
+- `[type name].suffix` is the format for font files under `[version directory]`, lower case letters and underscore only, e.g. `light.woff`, `light_italic.woff`.
+- `font.css` is the font family defining for related font and must be under `[version directory]`, all the font path must be absolute path.
+- files are not allowed be put into `font` and `[font directory]` directly. 
 
 ### `dc_assets/dc_public/data`
 detail to follow.
