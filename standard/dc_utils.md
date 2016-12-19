@@ -67,6 +67,7 @@ request.read_notify_uri # str
 request.new_notify_uri # str
 request.cngb # dict, keys are icon_uri, logo_uri, uri, full_name_zh, full_name_en
 request.dc # structure is the same to request.cngb
+request.main_nav_template # main navbar template path, only available when settings.MAIN_NAVBAR_FRAME exists
 ```
 
 # package `mail`
