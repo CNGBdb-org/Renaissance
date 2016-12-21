@@ -2,7 +2,7 @@
 roles for sub-directories:
 - `dc_blast` is the directory for results of all the BLAST jobs of all the projects, BLAST results can not be stored in other directory.
 - `dc_[project code name]` is the project-special directory .
-- `dc_blast` and `dc_[project code name]` must contains a sub-directory `result`.
+- `dc_blast` and `dc_[project code name]` must contains a sub-directory `results`.
 
 ## `dc_[project code name]`
 an external sub-directory in `dc_[project code name]` is `data`:
