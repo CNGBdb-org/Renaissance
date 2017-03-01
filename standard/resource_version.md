@@ -40,3 +40,8 @@
 ##animate
 ###3.5.2
 - https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css
+
+##ztree
+###3.5.28
+- https://cdnjs.cloudflare.com/ajax/libs/zTree.v3/3.5.28/js/jquery.ztree.core.min.js
+- https://cdnjs.cloudflare.com/ajax/libs/zTree.v3/3.5.28/css/zTreeStyle/zTreeStyle.min.css
